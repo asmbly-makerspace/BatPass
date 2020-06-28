@@ -6,7 +6,7 @@ The vision – **all admin interactions with account(s) occur through the LDAP**
 
 
 Here's what the basic workflow would look like for the base model created which we can build further upon.
-![BatPass workflow](/images/ATXHS BatPass.png)
+![BatPass workflow](/images/ATXHS_BatPass.png)
 
 Link to Google drawing [here](https://docs.google.com/drawings/d/1yIYogNvRNthOQkoszzCV3sKi9nQr5vJnzmHsZl3sID4/edit?usp=sharing)
 

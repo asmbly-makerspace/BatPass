@@ -9,17 +9,40 @@ Here's what the basic workflow would look like for the base model created which 
 ![BatPass workflow](/images/ATXHS_BatPass.png)
 
 Link to Google drawing [here](https://docs.google.com/drawings/d/1yIYogNvRNthOQkoszzCV3sKi9nQr5vJnzmHsZl3sID4/edit?usp=sharing)
+<br>
+<hr>
 
+## Systems to interact with:
+### Freshbooks 
+   - Accounting system for membership dues (Stripe used for payment processing) 
+   - [API docs](https://www.freshbooks.com/api/start)
+   - Uses OAuth for authentication
+<br><br>
 
-### Systems to interact with:
-1. **Freshbooks** - accounting system for membership dues (Stripe used for payment processing) [API docs](https://www.freshbooks.com/api/start)
-2. **Discourse** - forum for member discussion [API docs](https://docs.discourse.org/)
-3. **Skedda** - scheduling system for booking time at the space
+### Discourse 
+   - Forum for member discussion 
+   - [API docs](https://docs.discourse.org/)
+   - `GET` calls only require API key and API user in headers
+   - `POST` calls require API key, API user, and content-type in the headers
+   - See verified example scripts in `/examples` directory
+<br><br>
+
+### Skedda 
+   - Scheduling system for booking time at the space
    - Checked with CSM about API, they have integrations through Zapier, but no direct access endpoint.  May be able to reverse engineer to figure out endpoints and methods
-4. **Mailchimp** - email service for updates [API docs](https://mailchimp.com/developer/reference/)
-   - We will need to update account to include API package when we are ready to roll out
-5. **Key fob system** - used for access into the space
+<br><br>
+
+### Mailchimp 
+   - Email service for updates 
+   - [API docs](https://mailchimp.com/developer/reference/)
+
+<br><br>
+
+### Key fob system 
+   - Used for access into the space
    - We will need to research how to interact with this system 
+<br><br>
+<hr>
 
-
-
+## About this repo
+This is an open-source project for ATX Hackerspace.  Keep any API tokens or other private information stored in the `/private` directory which is ignored by git.  If you are interested in working on this project with us, please reach out to [it@atxhs.org](mailto:it@atxhs.org).

@@ -1,2 +1,3 @@
 # Ignore private files
-private/**
+*private/**
+.DS_Store

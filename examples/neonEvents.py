@@ -42,7 +42,7 @@ def apiCall(httpVerb, url, data, headers):
 
 
 ##### NEON #####
-# Get list of custom fields
+# Get list of custom fields for events
 httpVerb = 'GET'
 resourcePath = '/customFields'
 queryParams = '?category=Events'
@@ -79,8 +79,7 @@ responseOutputFields = apiCall(httpVerb, url, data, N_headers)
 
 
 ##### NEON #####
-# Get accounts where custom field KeyAccess equals No
-# inactive members
+# Get events in the Woodworking Event Category
 httpVerb = 'POST'
 resourcePath = '/events/search'
 queryParams = ''
@@ -107,7 +106,6 @@ data = '''
     }
 }
 '''
-# outputFiels 83 = KeyAccess, 85 = DiscourseID
 
 url = N_baseURL + resourcePath + queryParams
 print("### WOODWORKING EVENTS ###\n")

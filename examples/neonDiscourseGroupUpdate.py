@@ -13,16 +13,16 @@ import hmac
 
 
 # Neon Account Info
-N_APIkey = ''
-N_APIuser = 'atxhs'
-N_auth = f'{N_APIuser}:{N_APIkey}'
-N_baseURL = 'https://api.neoncrm.com/v2'
+N_APIkey    = ''
+N_APIuser   = 'atxhs'
+N_auth      = f'{N_APIuser}:{N_APIkey}'
+N_baseURL   = 'https://api.neoncrm.com/v2'
 N_signature = base64.b64encode(bytearray(auth.encode())).decode()
-N_headers = {'Content-Type':'application/json','Authorization': f'Basic {signature}', 'NEON-API-VERSION': '2.1'}
+N_headers   = {'Content-Type':'application/json','Authorization': f'Basic {signature}', 'NEON-API-VERSION': '2.1'}
 
 # Discourse Account Info
-D_APIkey =''
-D_APIuser =''
+D_APIkey  = ''
+D_APIuser = ''
 D_baseURL = 'https://yo.atxhs.org'
 D_headers = {'Api-Key':APIkey,'Api-Username':APIuser}
 
@@ -48,7 +48,7 @@ def apiCall(httpVerb, url, data, headers):
 
     return response
 
-    
+
 ##### NEON #####
 # Get list of custom fields
 httpVerb = 'GET'
@@ -154,6 +154,3 @@ data = {'usernames': 'valerie'}   # Change value to list generated above
 url = baseURL + resourcePath + queryParams
 
 removeResponse = apiCall(httpVerb, url, data, D_headers)
-
-
-

@@ -4,6 +4,11 @@ Discourse thread at https://yo.atxhs.org/t/revamping-our-internal-systems/300
 
 The vision – **all admin interactions with account(s) occur through the LDAP**. LDAP is the source of truth for all member info including active billing, B-share, contact info, etc (i.e. admins do not directly interact with subsystems like Freshbooks to update accounts). Accurate info, easily accessible.
 
+## The needs described in this project have been largely satisfied by our new member management system Neon.  Work is now being redirected to Neon API integrations to achieve the workflows shown below.
+
+Check out the Neon Integrations repo [here](https://github.com/ATXHS/NeonIntegrations) for the latest developments.
+<br>
+<hr>
 
 Here's what the basic workflow would look like for the base model created which we can build further upon.
 ![BatPass workflow](/images/ATXHS_BatPass.png)
@@ -13,6 +18,7 @@ Link to Google drawing [here](https://docs.google.com/drawings/d/1yIYogNvRNthOQk
 <hr>
 
 ## Systems to interact with:
+
 ### Freshbooks 
    - Accounting system for membership dues (Stripe used for payment processing) 
    - [API docs](https://www.freshbooks.com/api/start)

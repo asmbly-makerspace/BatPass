@@ -1,5 +1,11 @@
 # ATXHS BatPass
 
+<hr>
+
+# DEPRECATED - This project is no longer active
+
+<hr>
+
 Discourse thread at https://yo.atxhs.org/t/revamping-our-internal-systems/300
 
 The vision – **all admin interactions with account(s) occur through the LDAP**. LDAP is the source of truth for all member info including active billing, B-share, contact info, etc (i.e. admins do not directly interact with subsystems like Freshbooks to update accounts). Accurate info, easily accessible.
